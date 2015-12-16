@@ -27,3 +27,5 @@ PATH="$PATH:$HOME/.local/bin" ; export PATH
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/home/ljhanson/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+alias ls="ls -FG"
