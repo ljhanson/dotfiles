@@ -1,25 +1,25 @@
 colorscheme zenburn
 syntax enable 			" Turn on syntax highlighting
-set nocp
-set nowrap
-set autoindent
-set smartindent
-set tabstop=4			" number of visual spaces per TAB
-set softtabstop=4		" number of spaces in TAB when editing
-set expandtab			" TABS are spaces 
-filetype indent on      " load filetype-specific indent files
-set wildmenu            " visual autocomplete for command menu
-set shiftwidth=4
-set showmatch           " highlight matching [{()}]
-set vb t_vb=
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matchesset ruler
-set ignorecase
-set smartcase
-set spell
-set spelllang=en
-set wrapscan
-set laststatus=2
+set nocp                " Turn off vi compatibility
+set nowrap              " Turn off line wrapping
+set autoindent          " Match existing indent
+set smartindent         " Smart autoindenting
+set tabstop=4			" Number of visual spaces per Tab
+set softtabstop=4		" Number of spaces in Tab when editing
+set expandtab			" Tabs are spaces 
+filetype indent on      " Load filetype-specific indent files
+set wildmenu            " Visual autocomplete for command menu
+set shiftwidth=4        " Control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation.
+set showmatch           " Highlight matching [{()}]
+set vb t_vb=            " Turn off beep/visual flash
+set incsearch           " Search as characters are entered
+set hlsearch            " Highlight matches set ruler
+set ignorecase          " Ignore case when searching
+set smartcase           " Follow case if search string has mixed case
+set spell               " Turn on spell checking
+set spelllang=en        " English language
+set wrapscan            " Wrap around file when searching
+set laststatus=2        " Set status line to always be on.
 set guifont=Source\ Code\ Pro\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
