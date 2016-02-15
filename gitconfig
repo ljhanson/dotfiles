@@ -1,3 +1,5 @@
 [user]
 	email = ljhanson@openauthority.net
 	name = L.J. Hanson
+[push]
+	default = simple
