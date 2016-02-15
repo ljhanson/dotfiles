@@ -1,2 +1,2 @@
 # dotfiles
-This is my personl dotfiles repository
+This is my personal dotfiles repository
