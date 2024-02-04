@@ -1,5 +1,25 @@
 [user]
-	email = ljhanson@openauthority.net
-	name = L.J. Hanson
+  name = ljhanson
+  email = ljhanson@users.noreply.github.com
+[core]
+  excludesfile = /home/ljhanson/.gitignore_global
+[credential "https://github.com"]
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper = !/usr/bin/gh auth git-credential
+[credential]
+        helper = !aws codecommit credential-helper $@
+  UseHttpPath = true
+
+[pull]
+        rebase = true
+[fetch]
+        prune = true
+[diff]
+        colorMoved = zebra
+[submodule]
+        recurse = true
+[init]
+	defaultBranch = main
 [push]
 	default = simple
