@@ -24,9 +24,15 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
+Plugin 'jceb/vim-orgmode'
+Plugin 'junegunn/fzf'
+Plugin 'scrooloose/nerdtree'
 call vundle#end() " required
 
 colorscheme monokai
 let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+set guifont="FiraMono Nerd Font 10"
+
+:nnoremap <C-p> :NERDTree<CR>
