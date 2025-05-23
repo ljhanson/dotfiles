@@ -8,8 +8,9 @@ set laststatus=2  " Always display the status line
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
+syntax on
 endif
+
 " Setup Vundle
 "
 filetype off
@@ -26,7 +27,9 @@ Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jceb/vim-orgmode'
 Plugin 'junegunn/fzf'
-Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/fzf.vim'
+" Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-vinegar.git'
 call vundle#end() " required
 
 colorscheme monokai
@@ -35,4 +38,10 @@ let g:airline_powerline_fonts = 1
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 set guifont="FiraMono Nerd Font 10"
 
-:nnoremap <C-p> :NERDTree<CR>
+
+" Opem NERDTree
+" noremap <C-p> :NERDTree<CR>
+" Open FZF
+noremap <C-f> :FZF<CR>
+
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
