@@ -28,8 +28,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jceb/vim-orgmode'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-" Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-vinegar.git'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'dense-analysis/ale'
 call vundle#end() " required
 
 colorscheme monokai
@@ -39,9 +40,7 @@ let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linen
 set guifont="FiraMono Nerd Font 10"
 
 
-" Opem NERDTree
-" noremap <C-p> :NERDTree<CR>
 " Open FZF
-noremap <C-f> :FZF<CR>
+nnoremap <C-f> :FZF<CR>
 
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
