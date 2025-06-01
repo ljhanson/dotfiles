@@ -21,5 +21,8 @@
 	defaultBranch = main
 [push]
 	default = simple
+	autoSetupRemote = true
 [pack]
 	usePathWalk = true
+[color]
+	ui = auto
