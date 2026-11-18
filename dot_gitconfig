@@ -1,0 +1,27 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = L.J. Hanson
+	email = ljhanson@users.noreply.github.com
+[pull]
+        rebase = true
+[fetch]
+        prune = true
+[diff]
+        colorMoved = zebra
+[submodule]
+        recurse = true
+[init]
+	defaultBranch = main
+[push]
+	default = simple
+	autoSetupRemote = true
+[pack]
+	usePathWalk = true
+[color]
+	ui = auto
+
